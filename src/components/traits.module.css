@@ -5,6 +5,7 @@
         "charges frequency";
     grid-template-columns: min-content 1fr;
     align-items: stretch;
+    align-content: baseline;
     gap: var(--tiny);
     --bg-lightness: 90%;
     --bg-alpha: 1;

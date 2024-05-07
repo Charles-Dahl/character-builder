@@ -1,10 +1,20 @@
 import { createContext, useContext } from "react"
 import { Ability } from "@/utility/abilities"
-import { Attack } from "./attacks"
-import { signedNumber } from "./library/number"
-import { Trait } from "./traits"
+import { Attack } from "@/utility/attacks"
+import { signedNumber } from "@/utility/library/number"
+import { Trait } from "@/utility/traits"
+import { Size } from "@/utility/size"
+import { Dice } from "@/utility/dice"
 
 export interface Character {
+  playerName: string,
+  characterName: string,
+  class: string,
+  background: string,
+  race: string,
+  size: Size,
+  hitDice: Dice,
+  level: number,
   proficiencyBonus: number,
   abilityScores: {
     [Ability.strength]: number,
@@ -14,11 +24,58 @@ export interface Character {
     [Ability.wisdom]: number,
     [Ability.charisma]: number,
   },
+  saves: {
+    [Ability.strength]: boolean,
+    [Ability.dexterity]: boolean,
+    [Ability.constitution]: boolean,
+    [Ability.intelligence]: boolean,
+    [Ability.wisdom]: boolean,
+    [Ability.charisma]: boolean,
+  },
+  skills: {
+    [Ability.strength]: {
+      Athletics: boolean,
+    },
+    [Ability.dexterity]: {
+      Acrobatics: boolean,
+      "Sleight of Hand": boolean,
+      Stealth: boolean,
+    },
+    [Ability.constitution]: {},
+    [Ability.intelligence]: {
+      Arcana: boolean,
+      History: boolean,
+      Investigation: boolean,
+      Nature: boolean,
+      Religion: boolean,
+    },
+    [Ability.wisdom]: {
+      "Animal Handling": boolean,
+      Insight: boolean,
+      Medicine: boolean,
+      Perception: boolean,
+      Survival: boolean,
+    },
+    [Ability.charisma]: {
+      Deception: boolean,
+      Intimidation: boolean,
+      Performance: boolean,
+      Persuasion: boolean,
+    },
+  },
   attacks: Attack[],
   traits: Trait[],
 }
 
 export const character: Character = {
+  playerName: 'Charles',
+  characterName: 'Feeblethorp',
+  class: 'Psi Warrior Fighter',
+  background: 'Entertainer',
+  race: 'Forest Gnome',
+  size: Size.small,
+  hitDice: Dice.d10,
+  level: 5,
   proficiencyBonus: 3,
   abilityScores: {
     [Ability.strength]: 12,
@@ -27,6 +84,45 @@ export const character: Character = {
     [Ability.intelligence]: 16,
     [Ability.wisdom]: 8,
     [Ability.charisma]: 10,
+  },
+  saves: {
+    [Ability.strength]: true,
+    [Ability.dexterity]: false,
+    [Ability.constitution]: true,
+    [Ability.intelligence]: false,
+    [Ability.wisdom]: false,
+    [Ability.charisma]: false,
+  },
+  skills: {
+    [Ability.strength]: {
+      Athletics: true,
+    },
+    [Ability.dexterity]: {
+      Acrobatics: true,
+      "Sleight of Hand": false,
+      Stealth: false,
+    },
+    [Ability.constitution]: {},
+    [Ability.intelligence]: {
+      Arcana: false,
+      History: false,
+      Investigation: false,
+      Nature: false,
+      Religion: false,
+    },
+    [Ability.wisdom]: {
+      "Animal Handling": false,
+      Insight: false,
+      Medicine: false,
+      Perception: true,
+      Survival: false,
+    },
+    [Ability.charisma]: {
+      Deception: false,
+      Intimidation: false,
+      Performance: true,
+      Persuasion: false,
+    },
   },
   attacks: [
     {

@@ -10,7 +10,7 @@ const TraitDisplay = ({ label, description, charges = 0, frequency }: Trait) => 
         <div key={label} className={styles.item}>
             <Inline className={styles.label}>{label}</Inline>
             <Inline className={styles.description}>{description}</Inline>
-            <Inline className={styles.charges}>{[...Array(charges)].map(() => <input type="checkbox" />)}</Inline>
+            <Inline className={styles.charges}>{[...Array(charges)].map((element, index) => <input key={index} type="checkbox" />)}</Inline>
             <Inline className={styles.frequency}>{frequency}</Inline>
         </div>
     )

@@ -5,24 +5,25 @@ import AbilityScore from "@/components/ability-score";
 import Inline from "@/components/library/inline";
 import Stack from "@/components/library/stack";
 import Attacks from "@/components/attacks";
+import AbilityExtended from "./ability-extended";
+import { useCharacter } from "@/utility/character";
 
 const AbilityBlock = () => {
   return (
     <Inline>
+      <Attacks />
       <Stack>
-        <div></div>
-        <Inline>
-          <Attacks />
-          <Stack>
-            <AbilityScore ability={Ability.strength} />
-            <AbilityScore ability={Ability.dexterity} />
-          </Stack>
-        </Inline>
+        <AbilityExtended ability={Ability.strength} />
+        <AbilityExtended ability={Ability.dexterity} />
       </Stack>
-      <AbilityScore ability={Ability.constitution} />
-      <AbilityScore ability={Ability.intelligence} />
-      <AbilityScore ability={Ability.wisdom} />
-      <AbilityScore ability={Ability.charisma} />
+      <Stack>
+        <AbilityExtended ability={Ability.constitution} />
+        <AbilityExtended ability={Ability.intelligence} />
+      </Stack>
+      <Stack>
+        <AbilityExtended ability={Ability.wisdom} />
+        <AbilityExtended ability={Ability.charisma} />
+      </Stack>
     </Inline>
   )
 }
