@@ -1,0 +1,15 @@
+.outer-box {
+    border-style: double;
+    border-color: black;
+    border-width: 1;
+    width: 6rem;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: x-small;
+}
+
+.modifier {
+    font-size: xx-large;
+}

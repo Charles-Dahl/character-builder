@@ -1,0 +1,16 @@
+.container {
+    flex-direction: column;
+    justify-content: start;
+}
+
+.container.left {
+    align-items: start;
+}
+
+.container.right {
+    align-items: end;
+}
+
+.container.stretch {
+    align-items: stretch;
+}

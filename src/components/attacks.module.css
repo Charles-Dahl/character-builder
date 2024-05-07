@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-areas: "label hit effect range";
+    grid-template-columns: fit-content min-content 1fr fit-content;
+    gap: var(--tiny, 1rem);
+    padding: var(--small, 1rem);
+    border: 1px inset grey;
+}
+
+.item {
+    --bg-lightness: 90%;
+    --bg-alpha: 1;
+    padding: var(--tiny, 1rem);
+}
+
+.header {
+    --fg-lightness: 70%;
+    font-weight: 600;
+    padding-inline: var(--tiny, 1rem);
+}

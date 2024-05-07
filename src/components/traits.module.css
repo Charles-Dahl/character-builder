@@ -1,0 +1,29 @@
+.item {
+    display: grid;
+    grid-template-areas: "label label"
+        "description description"
+        "charges frequency";
+    grid-template-columns: min-content 1fr;
+    align-items: stretch;
+    gap: var(--tiny);
+    --bg-lightness: 90%;
+    --bg-alpha: 1;
+    padding: var(--tiny);
+}
+
+.label {
+    grid-area: label;
+    font-weight: 500;
+}
+
+.description {
+    grid-area: description;
+}
+
+.charges {
+    grid-area: charges;
+}
+
+.frequency {
+    grid-area: frequency;
+}
