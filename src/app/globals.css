@@ -4,14 +4,12 @@
   --bg-saturation: 0%;
   --bg-lightness: 100%;
   --bg-alpha: 0;
-  background: hsla(var(--bg-hue), var(--bg-saturation), var(--bg-lightness), var(--bg-alpha));
 
   /* Foreground Colours */
   --fg-hue: 0;
   --fg-saturation: 0%;
   --fg-lightness: 0%;
   --fg-alpha: 1;
-  color: hsla(var(--fg-hue), var(--fg-saturation), var(--fg-lightness), var(--fg-alpha));
 
   /* Spacing */
   --none: 0;
@@ -23,6 +21,11 @@
   --x-large: 3rem;
   --xx-large: 6rem;
 
+}
+
+@page {
+  size: A4;
+  margin: 0;
 }
 
 * {
@@ -41,8 +44,10 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  background: grey;
+  height: 100dvh;
+  width: 100dvw;
+  justify-content: center;
 }
 
 a {

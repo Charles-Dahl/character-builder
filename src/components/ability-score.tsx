@@ -17,7 +17,6 @@ const AbilityScore = ({ ability }: AbilityScoreProps) => {
     const modifierValue = useModifierValue(ability)
 
     return <Stack className={styles['outer-box']}>
-        <Inline className={styles.label}>{ability}</Inline>
         <Inline className={styles.modifier}>{signedNumber.format(modifierValue)}</Inline>
         <Inline>{abilityScores[ability]}</Inline>
     </Stack>

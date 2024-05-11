@@ -9,7 +9,8 @@ import { Dice } from "@/utility/dice"
 export interface Character {
   playerName: string,
   characterName: string,
-  class: string,
+  mainClass: string,
+  subclass: string,
   background: string,
   race: string,
   size: Size,
@@ -70,7 +71,8 @@ export interface Character {
 export const character: Character = {
   playerName: 'Charles',
   characterName: 'Feeblethorp',
-  class: 'Psi Warrior Fighter',
+  mainClass: 'Fighter',
+  subclass: 'Psi Warrior',
   background: 'Entertainer',
   race: 'Forest Gnome',
   size: Size.small,
@@ -154,16 +156,10 @@ export const character: Character = {
   ],
   traits: [
     {
-      label: "Darkvision",
-      description: "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern colour in darkness only shades of grey.",
-    },
-    {
-      label: "Gnome Cunning",
-      description: "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
-    },
-    {
-      label: "Speak with Small Beasts",
-      description: "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts",
+      label: "Psionic Power",
+      description: "Some of your powers expend the Psionic Energy die they use and you can't use a power if it requires you to use a die when your dice are all expended. Once per short rest, as a bonus action, you can regain one expended Psionic Energy die.",
+      frequency: "Long Rest",
+      charges: 6,
     },
     {
       label: "Second Wind",
@@ -180,6 +176,32 @@ export const character: Character = {
     {
       label: "Thrown Weapon Fighting",
       description: "You can draw a throwing weapon as part of the attack you make with the weapon. In addition, when you hit with a ranged weapon you gain a +2 bonus to the damage roll.",
+    },
+    {
+      label: "Protective Field",
+      description: "When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, and reduce the damage taken by the number rolled plus int modifier.",
+    },
+    {
+      label: "Psionic Strike",
+      description: "Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, dealing force damage to the target equal to the number rolled plus int modifier.",
+    },
+    {
+      label: "Telekinetic Movement",
+      description: "As an action, you target one loose object that is Large or smaller or another willing creature you can see within 30 feet. You can move it up to 30 feet to an unoccupied space you can see. If it is a Tiny object, you can move it to or from your hand.",
+      frequency: "Short Rest or Psionic Die",
+      charges: 1,
+    },
+    {
+      label: "Darkvision",
+      description: "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern colour in darkness only shades of grey.",
+    },
+    {
+      label: "Gnome Cunning",
+      description: "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+    },
+    {
+      label: "Speak with Small Beasts",
+      description: "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts",
     },
     {
       label: "Observant",

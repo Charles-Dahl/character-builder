@@ -1,0 +1,58 @@
+.banner-start {
+    --bg-lightness: 90%;
+    --bg-alpha: 1;
+    --size: 60px;
+
+    padding: var(--medium);
+    padding-inline-start: calc(var(--size) * 0.5 + var(--medium));
+    height: var(--size);
+    flex-grow: 1;
+    position: relative;
+}
+
+.banner-start::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-top: calc(var(--size) * 0.5) solid transparent;
+    border-bottom: calc(var(--size) * 0.5) solid transparent;
+
+    border-left: calc(var(--size) * 0.5) solid white;
+
+}
+
+.banner-end {
+    --bg-lightness: 90%;
+    --bg-alpha: 1;
+    --size: 60px;
+
+    padding: var(--medium);
+    padding-inline-end: calc(var(--size) * 0.5 + var(--medium));
+    height: var(--size);
+    flex-grow: 1;
+    position: relative;
+}
+
+.banner-end::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-top: calc(var(--size) * 0.5) solid transparent;
+    border-bottom: calc(var(--size) * 0.5) solid transparent;
+
+    border-right: calc(var(--size) * 0.5) solid white;
+
+}
+
+.subclass {
+    --fg-lightness: 40%;
+    font-size: small;
+    font-weight: 600;
+}
+
+.character-name {
+    border: 4px solid black;
+    padding: var(--medium);
+    font-size: xx-large;
+    font-weight: 600;
+}

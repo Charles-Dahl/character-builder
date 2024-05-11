@@ -1,3 +1,36 @@
 .container {
-    border: black 1px solid;
+    border: lightgrey 1px solid;
+    border-radius: 0.3rem;
+    --bg-alpha: 1;
+    --bg-lightness: 95%;
+    display: grid;
+    grid-template-areas: "score label" "score content" "other content";
+    grid-template-columns: min-content 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+    gap: var(--tiny);
+}
+
+.score {
+    grid-area: score;
+}
+
+.label {
+    grid-area: label;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: x-small;
+    justify-self: center;
+    align-items: baseline;
+}
+
+.other {
+    grid-area: other;
+}
+
+.content {
+    grid-area: content;
+    align-items: start;
+    font-size: small;
+    gap: 1px;
 }

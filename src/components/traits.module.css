@@ -15,10 +15,12 @@
 .label {
     grid-area: label;
     font-weight: 500;
+    font-size: small;
 }
 
 .description {
     grid-area: description;
+    font-size: smaller;
 }
 
 .charges {
@@ -27,4 +29,5 @@
 
 .frequency {
     grid-area: frequency;
+    font-size: smaller;
 }
