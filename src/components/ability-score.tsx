@@ -12,13 +12,14 @@ interface AbilityScoreProps {
 }
 
 const AbilityScore = ({ ability }: AbilityScoreProps) => {
-    const { abilityScores } = useCharacter()
+    const { abilityScores, saves, proficiencyBonus } = useCharacter()
 
     const modifierValue = useModifierValue(ability)
+    const saveValue = modifierValue + (saves[ability] ? proficiencyBonus : 0)
 
     return <Stack className={styles['outer-box']}>
         <Inline className={styles.modifier}>{signedNumber.format(modifierValue)}</Inline>
-        <Inline>{abilityScores[ability]}</Inline>
+        <Inline className={styles.value}>{abilityScores[ability]}</Inline>
     </Stack>
 }
 

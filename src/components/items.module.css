@@ -1,0 +1,5 @@
+.quantity {
+    width: 1rem;
+    aspect-ratio: 1;
+    border: var(--border);
+}

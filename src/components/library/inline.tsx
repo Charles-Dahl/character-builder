@@ -1,16 +1,6 @@
 import { HTMLAttributes } from "react";
 import styles from "./inline.module.css"
-
-export enum Gap {
-    none = '0',
-    fine = '1px',
-    tiny = '0.3rem',
-    small = '0.6rem',
-    medium = '1rem',
-    large = '1.5rem',
-    xLarge = '3rem',
-    xxLarge = '6rem',
-}
+import { Gap } from "@/utility/library/spacing";
 
 interface InlineProps extends HTMLAttributes<HTMLSpanElement> {
     before?: React.ReactNode,

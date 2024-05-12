@@ -1,0 +1,11 @@
+.figure {
+    border: var(--border, lightgrey 2px solid);
+    width: 2rem;
+    aspect-ratio: 1;
+    justify-content: center;
+}
+
+.label {
+    font-size: x-small;
+    text-transform: uppercase;
+}

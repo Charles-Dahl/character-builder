@@ -1,15 +1,23 @@
 .outer-box {
-    border-style: double;
-    border-color: black;
-    border-width: 1;
-    width: 5rem;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr min-content;
 }
 
-.label {
+.value {
+    border-right: var(--border);
     text-transform: uppercase;
-    font-size: x-small;
+    font-size: small;
+    padding: var(--tiny);
+    justify-content: center;
 }
 
 .modifier {
+    border-bottom: var(--border);
+    border-right: var(--border);
     font-size: xx-large;
+    align-self: stretch;
+    padding: var(--medium);
+    justify-content: center;
+    width: 5rem;
 }

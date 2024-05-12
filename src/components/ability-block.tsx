@@ -1,16 +1,26 @@
 'use client'
 
+import AbilityExtended from "@/components/ability-extended";
+import ArmorClass from "@/components/armor-class";
+import HitPoints from "@/components/hit-points";
+import Initiative from "@/components/initiative";
 import { Ability } from "@/utility/abilities";
 import styles from "./ability-block.module.css";
-import AbilityExtended from "./ability-extended";
+import Attacks from "./attacks";
 
 const AbilityBlock = () => {
   return (
     <div className={styles.container}>
+      <Attacks />
       <AbilityExtended ability={Ability.strength} />
-      <AbilityExtended ability={Ability.constitution} />
+      <AbilityExtended ability={Ability.constitution}><HitPoints /></AbilityExtended>
       <AbilityExtended ability={Ability.wisdom} />
-      <AbilityExtended ability={Ability.dexterity} />
+      <AbilityExtended ability={Ability.dexterity}>
+        <div className={styles["figure-group"]}>
+          <ArmorClass />
+          <Initiative />
+        </div>
+      </AbilityExtended>
       <AbilityExtended ability={Ability.intelligence} />
       <AbilityExtended ability={Ability.charisma} />
     </div>

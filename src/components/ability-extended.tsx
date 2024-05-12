@@ -13,7 +13,7 @@ interface AbilityExtendedProps {
 
 const AbilityExtended = ({ children, ability }: AbilityExtendedProps) => {
 
-    const { skills, proficiencyBonus } = useCharacter()
+    const { skills, saves, proficiencyBonus } = useCharacter()
     const modifierValue = useModifierValue(ability)
 
     return <div className={styles.container}>
@@ -21,6 +21,7 @@ const AbilityExtended = ({ children, ability }: AbilityExtendedProps) => {
         <div className={styles.label}>{ability}</div>
         <div className={styles.other}>{children}</div>
         <Stack className={styles.content}>
+            <Skill label="Saving Throw ★" proficient={saves[ability]} value={modifierValue + (saves[ability] ? proficiencyBonus : 0)} />
             {Object.entries(skills[ability]).map(([label, proficient]) =>
                 <Skill key={label} label={label} proficient={proficient} value={modifierValue + (proficient ? proficiencyBonus : 0)} />
             )}

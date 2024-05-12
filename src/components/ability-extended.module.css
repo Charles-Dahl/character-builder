@@ -1,10 +1,11 @@
 .container {
-    border: lightgrey 1px solid;
-    border-radius: 0.3rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    overflow: hidden;
     --bg-alpha: 1;
     --bg-lightness: 95%;
     display: grid;
-    grid-template-areas: "score label" "score content" "other content";
+    grid-template-areas: "score label" "score content" "score other";
     grid-template-columns: min-content 1fr;
     align-items: stretch;
     justify-items: stretch;

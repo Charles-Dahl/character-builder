@@ -5,6 +5,7 @@ import { signedNumber } from "@/utility/library/number"
 import { Trait } from "@/utility/traits"
 import { Size } from "@/utility/size"
 import { Dice } from "@/utility/dice"
+import { Item } from "@/utility/items"
 
 export interface Character {
   playerName: string,
@@ -66,6 +67,14 @@ export interface Character {
   },
   attacks: Attack[],
   traits: Trait[],
+  items: Item[],
+  proficiencies: string[],
+  personality: string,
+  ideals: string,
+  bonds: string,
+  flaws: string,
+  getArmorClass: (dexModifier: number) => number
+  getInitiative: (dexModifier: number) => number
 }
 
 export const character: Character = {
@@ -162,6 +171,16 @@ export const character: Character = {
       charges: 6,
     },
     {
+      label: "Telekinetic Movement",
+      description: "As an action, you target one loose object that is Large or smaller or another willing creature you can see within 30 feet. You can move it up to 30 feet to an unoccupied space you can see. If it is a Tiny object, you can move it to or from your hand.",
+      frequency: "Short Rest or Psionic Die",
+      charges: 1,
+    },
+    {
+      label: "Psionic Strike",
+      description: "Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, dealing force damage to the target equal to the number rolled plus int modifier.",
+    },
+    {
       label: "Second Wind",
       description: "On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.",
       frequency: "Short Rest",
@@ -182,18 +201,12 @@ export const character: Character = {
       description: "When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, and reduce the damage taken by the number rolled plus int modifier.",
     },
     {
-      label: "Psionic Strike",
-      description: "Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, dealing force damage to the target equal to the number rolled plus int modifier.",
-    },
-    {
-      label: "Telekinetic Movement",
-      description: "As an action, you target one loose object that is Large or smaller or another willing creature you can see within 30 feet. You can move it up to 30 feet to an unoccupied space you can see. If it is a Tiny object, you can move it to or from your hand.",
-      frequency: "Short Rest or Psionic Die",
-      charges: 1,
-    },
-    {
       label: "Darkvision",
       description: "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern colour in darkness only shades of grey.",
+    },
+    {
+      label: "Harper",
+      description: `You have been recruited by the harpers, a secret organisation dedicated to preserving historical lore, maintaining balance and defending the innocent.`,
     },
     {
       label: "Gnome Cunning",
@@ -201,13 +214,71 @@ export const character: Character = {
     },
     {
       label: "Speak with Small Beasts",
-      description: "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts",
+      description: "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts.",
     },
     {
       label: "Observant",
       description: `If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips. You have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.`,
     },
   ],
+  items: [
+    {
+      label: "Breastplate",
+      equipped: true,
+    },
+    {
+      label: "Cloak of Protection",
+      equipped: true,
+    },
+    {
+      label: "Shield",
+      equipped: false,
+    },
+    {
+      label: "Leather Armor",
+    },
+    {
+      label: "Backpack",
+    },
+    {
+      label: "Bedroll",
+    },
+    {
+      label: "Mess Kit",
+    },
+    {
+      label: "Tinderbox",
+    },
+    {
+      label: "Waterskin",
+    },
+    {
+      label: "50ft Rope",
+    },
+    {
+      label: "Torches",
+      quantity: 10,
+    },
+    {
+      label: "Days Rations",
+      quantity: 10,
+    },
+  ],
+  proficiencies: [
+    "Common",
+    "Gnomish",
+    "All Armor",
+    "Shields",
+    "Simple Weapons",
+    "Martial Weapons",
+    "Disguise Kit",
+  ],
+  personality: "I'll settle for nothing less than perfection.",
+  ideals: "Art should reflect the soul; It should come from within and reveal who we really are.",
+  bonds: "I am on a mission to retrieve something precious that was taken from me and exact my revenge.",
+  flaws: "I have trouble keeping my true feelings hidden. My Sharp tongue lands me in trouble.",
+  getArmorClass: (dexModifier: number) => dexModifier + 14,
+  getInitiative: (dexModifier: number) => dexModifier,
 }
 
 export const CharacterContext = createContext<Character>(character)

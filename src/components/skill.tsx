@@ -1,5 +1,6 @@
-import Inline, { Gap } from "@/components/library/inline"
+import Inline from "@/components/library/inline"
 import { signedNumber } from "@/utility/library/number"
+import { Gap } from "@/utility/library/spacing"
 import styles from "./skill.module.css"
 
 interface SkillProps {
@@ -12,7 +13,7 @@ const Skill = ({ label, proficient, value }: SkillProps) => {
     return (
         <Inline gap={Gap.tiny}>
             <input type="checkbox" checked={proficient} readOnly />
-            <Inline>{signedNumber.format(value)}</Inline>
+            <Inline className={styles.value}>{signedNumber.format(value)}</Inline>
             <Inline className={styles.label}>{label}</Inline>
         </Inline>
     )

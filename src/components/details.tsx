@@ -6,7 +6,7 @@ import Stack from "./library/stack"
 const Details = () => {
     const { characterName, level, mainClass, subclass, proficiencyBonus, race, background, playerName, size } = useCharacter()
     return (
-        <Inline>
+        <Inline className={styles.container}>
             <div className={styles['banner-start']}>
                 <Inline>Level {level}</Inline>
                 <Stack>

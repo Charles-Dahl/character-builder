@@ -1,3 +1,7 @@
+.container {
+    flex-grow: 1;
+}
+
 .banner-start {
     --bg-lightness: 90%;
     --bg-alpha: 1;
@@ -51,8 +55,13 @@
 }
 
 .character-name {
-    border: 4px solid black;
-    padding: var(--medium);
-    font-size: xx-large;
+    background-image: url(/nameplate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12rem;
+    aspect-ratio: 2;
+    justify-content: center;
+    font-size: x-large;
     font-weight: 600;
 }

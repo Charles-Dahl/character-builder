@@ -6,21 +6,23 @@
     grid-template-columns: min-content 1fr;
     align-items: stretch;
     align-content: baseline;
-    gap: var(--tiny);
+    gap: var(--fine);
     --bg-lightness: 90%;
     --bg-alpha: 1;
+    border-radius: 0.3rem;
     padding: var(--tiny);
 }
 
 .label {
     grid-area: label;
     font-weight: 500;
-    font-size: small;
+    font-size: smaller;
 }
 
 .description {
     grid-area: description;
     font-size: smaller;
+    text-wrap: pretty;
 }
 
 .charges {

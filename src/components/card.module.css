@@ -1,0 +1,25 @@
+.container {
+    border: var(--border);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: var(--tiny);
+    --bg-alpha: 1;
+    --bg-lightness: 95%;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: start;
+}
+
+.quantity {
+    width: 1rem;
+    aspect-ratio: 1;
+    border: var(--border);
+}
+
+.label {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: xx-small;
+    align-self: center;
+    align-items: baseline;
+}

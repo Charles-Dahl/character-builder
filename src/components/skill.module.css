@@ -2,3 +2,11 @@
     font-size: small;
     align-self: self-end;
 }
+
+.value {
+    border: var(--border);
+    width: 1.2rem;
+    aspect-ratio: 1;
+    font-size: x-small;
+    justify-content: center;
+}

@@ -21,10 +21,11 @@
   --x-large: 3rem;
   --xx-large: 6rem;
 
+  --border: lightgrey 2px solid;
 }
 
 @page {
-  size: A4;
+  size: A4 landscape;
   margin: 0;
 }
 
@@ -40,6 +41,7 @@
   align-items: center;
   background: hsla(var(--bg-hue), var(--bg-saturation), var(--bg-lightness), var(--bg-alpha));
   color: hsla(var(--fg-hue), var(--fg-saturation), var(--fg-lightness), var(--fg-alpha));
+  font-size: small;
 }
 
 html,

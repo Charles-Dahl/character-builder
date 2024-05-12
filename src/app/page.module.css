@@ -7,11 +7,33 @@
   width: 297mm;
 
   padding: var(--small);
+  padding-top: var(--none);
 }
 
 .layout {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-areas: "player" "abilities" "traits";
+  grid-template-areas: "player player" "abilities side" "traits side";
+  grid-template-columns: 1fr 157px;
+  grid-template-rows: min-content min-content 1fr;
+  justify-items: stretch;
+  gap: var(--tiny);
+}
+
+.player {
+  grid-area: player;
+}
+
+.abilities {
+  grid-area: abilities;
+}
+
+.traits {
+  grid-area: traits;
+}
+
+.side {
+  grid-area: side;
+  align-self: start;
 }
