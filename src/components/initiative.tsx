@@ -1,13 +1,12 @@
-import { useCharacter, useModifierValue } from "@/utility/character"
-import Figure from "./figure"
 import { Ability } from "@/utility/abilities"
+import { useModifierValue } from "@/utility/character"
 import { signedNumber } from "@/utility/library/number"
+import Figure from "./figure"
 
 const Initiative = () => {
-    const { getInitiative } = useCharacter()
     const dexModifier = useModifierValue(Ability.dexterity)
     return (
-        <Figure label="Initiative">{signedNumber.format(getInitiative(dexModifier))}</Figure>
+        <Figure label="Initiative">{signedNumber.format(dexModifier)}</Figure>
     )
 }
 

@@ -3,10 +3,12 @@ import Figure from "./figure"
 import { Ability } from "@/utility/abilities"
 
 const ArmorClass = () => {
-    const { getArmorClass } = useCharacter()
-    const dexModifier = useModifierValue(Ability.dexterity)
+    const { baseArmor, armorModifier } = useCharacter()
+    const modifierValue = useModifierValue(armorModifier)
+    const finalValue = baseArmor + modifierValue
+
     return (
-        <Figure label="Armor Class">{getArmorClass(dexModifier)}</Figure>
+        <Figure label="Armor Class">{finalValue}</Figure>
     )
 }
 

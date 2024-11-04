@@ -8,11 +8,13 @@ import { Fragment } from "react";
 const AttackDisplay = ({ label, damageType, modifier, range, onHit }: Attack) => {
     const { proficiencyBonus } = useCharacter()
     const modifierValue = useModifierValue(modifier)
+    const hitDescription = onHit.replace(/(\$modifier\$)/g, signedNumber.format(modifierValue))
+
     return (
         <Fragment key={label}>
             <Inline className={styles.item}>{label}</Inline>
             <Inline className={styles.item}>{signedNumber.format(modifierValue + proficiencyBonus)}</Inline>
-            <Inline className={styles.item}>{onHit(modifierValue)} {damageType}</Inline>
+            <Inline className={styles.item}>{hitDescription} {damageType}</Inline>
             <Inline className={styles.item}>{range}</Inline>
         </Fragment>
     )

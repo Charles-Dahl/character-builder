@@ -12,9 +12,9 @@ const AbilityBlock = () => {
   return (
     <div className={styles.container}>
       <Attacks />
-      <AbilityExtended ability={Ability.strength} />
       <AbilityExtended ability={Ability.constitution}><HitPoints /></AbilityExtended>
       <AbilityExtended ability={Ability.wisdom} />
+      <AbilityExtended ability={Ability.strength} />
       <AbilityExtended ability={Ability.dexterity}>
         <div className={styles["figure-group"]}>
           <ArmorClass />

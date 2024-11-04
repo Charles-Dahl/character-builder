@@ -17,7 +17,7 @@
     border-right: var(--border);
     font-size: xx-large;
     align-self: stretch;
-    padding: var(--medium);
+    padding: var(--small);
     justify-content: center;
     width: 5rem;
 }

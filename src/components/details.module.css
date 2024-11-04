@@ -5,7 +5,7 @@
 .banner-start {
     --bg-lightness: 90%;
     --bg-alpha: 1;
-    --size: 60px;
+    --size: 50px;
 
     padding: var(--medium);
     padding-inline-start: calc(var(--size) * 0.5 + var(--medium));
@@ -28,7 +28,7 @@
 .banner-end {
     --bg-lightness: 90%;
     --bg-alpha: 1;
-    --size: 60px;
+    --size: 50px;
 
     padding: var(--medium);
     padding-inline-end: calc(var(--size) * 0.5 + var(--medium));
@@ -59,9 +59,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 12rem;
+    width: 10rem;
     aspect-ratio: 2;
     justify-content: center;
-    font-size: x-large;
+    font-size: large;
     font-weight: 600;
 }

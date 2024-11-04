@@ -6,8 +6,8 @@
   height: 210mm;
   width: 297mm;
 
-  padding: var(--small);
-  padding-top: var(--none);
+  padding: var(--medium);
+  padding-top: var(--small);
 }
 
 .layout {

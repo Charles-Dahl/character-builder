@@ -5,5 +5,5 @@ export interface Attack {
     modifier: Ability,
     damageType?: string,
     range?: string,
-    onHit: (modifier: number) => string,
+    onHit: string,
 }
