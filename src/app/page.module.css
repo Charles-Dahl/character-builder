@@ -18,6 +18,7 @@
   grid-template-columns: 1fr 157px;
   grid-template-rows: min-content min-content 1fr;
   justify-items: stretch;
+  align-items: start;
   gap: var(--tiny);
 }
 

@@ -3,3 +3,7 @@
     aspect-ratio: 1;
     border: var(--border);
 }
+
+.item {
+    font-size: x-small;
+}

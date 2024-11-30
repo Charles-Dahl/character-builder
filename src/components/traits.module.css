@@ -1,3 +1,7 @@
+.grid {
+    width: 100%;
+}
+
 .item {
     display: grid;
     grid-template-areas: "label label"

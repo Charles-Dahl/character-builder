@@ -13,13 +13,13 @@ const HitPoints = () => {
                 <Inline className={styles.label}>Hit Points</Inline>
                 <div className={styles.container}>
                     <Figure label="Current" />
-                    <Figure label="Max">44</Figure>
+                    <Figure label="Max">58</Figure>
                     <Figure label="Temp" />
                 </div>
             </Stack>
             <Stack>
                 <Inline className={styles.label}>Hit Dice</Inline>
-                <Inline gap={Gap.small}>{hitDice}{[...Array(level)].map((element, index) => <input key={index} type="checkbox" />)}</Inline>
+                <Inline gap="1px">{hitDice}{[...Array(level)].map((element, index) => <input key={index} type="checkbox" />)}</Inline>
             </Stack>
         </Stack>
     )

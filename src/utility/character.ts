@@ -6,7 +6,7 @@ import { Trait } from "@/utility/traits"
 import { Size } from "@/utility/size"
 import { Dice } from "@/utility/dice"
 import { Item } from "@/utility/items"
-export const character: Character = require('./feeblethorp.json')
+export const character: Character = require('./magnus.json')
 
 export interface Character {
   playerName: string,
@@ -290,5 +290,5 @@ export const useCharacter = () => {
 
 export const useModifierValue = (modifier: Ability) => {
   const { abilityScores } = useCharacter()
-  return (abilityScores[modifier] - 10) / 2
+  return Math.floor((abilityScores[modifier] - 10) / 2)
 }

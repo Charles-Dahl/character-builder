@@ -7,7 +7,7 @@ import Card from "@/components/card"
 import { Gap } from "@/utility/library/spacing"
 
 const ItemDisplay = ({ label, quantity, equipped }: Item) => {
-    return <Inline>
+    return <Inline className={styles.item}>
         {quantity && <div className={styles.quantity}></div>}
         {label}
         {equipped && "★"}

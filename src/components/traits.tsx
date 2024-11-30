@@ -1,8 +1,7 @@
-import Stack from "@/components/library/stack"
+import AutoGrid from "@/components/library/auto-grid"
+import Inline from "@/components/library/inline"
 import { useCharacter } from "@/utility/character"
 import { Trait } from "@/utility/traits"
-import Inline from "@/components/library/inline"
-import AutoGrid from "@/components/library/auto-grid"
 import styles from "./traits.module.css"
 
 const TraitDisplay = ({ label, description, charges = 0, frequency }: Trait) => {
@@ -19,7 +18,7 @@ const TraitDisplay = ({ label, description, charges = 0, frequency }: Trait) => 
 const Traits = () => {
     const { traits } = useCharacter()
     return (
-        <AutoGrid>
+        <AutoGrid className={styles.grid}>
             {traits.map(TraitDisplay)}
         </AutoGrid>
     )

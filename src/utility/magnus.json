@@ -1,0 +1,200 @@
+{
+  "playerName": "Charles",
+  "characterName": "Magnus Ironbane",
+  "mainClass": "Wizard",
+  "subclass": "Evocation",
+  "background": "Hermit",
+  "race": "Hill Dwarf",
+  "size": "Medium",
+  "hitDice": "d6",
+  "level": 7,
+  "proficiencyBonus": 3,
+  "abilityScores": {
+    "Strength": 12,
+    "Dexterity": 10,
+    "Constitution": 16,
+    "Intelligence": 17,
+    "Wisdom": 14,
+    "Charisma": 8
+  },
+  "saves": {
+    "Strength": false,
+    "Dexterity": false,
+    "Constitution": false,
+    "Intelligence": true,
+    "Wisdom": true,
+    "Charisma": false
+  },
+  "skills": {
+    "Strength": {
+      "Athletics": false
+    },
+    "Dexterity": {
+      "Acrobatics": false,
+      "Sleight of Hand": false,
+      "Stealth": false
+    },
+    "Constitution": {},
+    "Intelligence": {
+      "Arcana": false,
+      "History": false,
+      "Investigation": false,
+      "Nature": false,
+      "Religion": true
+    },
+    "Wisdom": {
+      "Animal Handling": false,
+      "Insight": false,
+      "Medicine": true,
+      "Perception": false,
+      "Survival": false
+    },
+    "Charisma": {
+      "Deception": false,
+      "Intimidation": false,
+      "Performance": false,
+      "Persuasion": false
+    }
+  },
+  "attacks": [
+    {
+      "label": "Quarterstaff",
+      "damageType": "Bludgeoning",
+      "modifier": "Strength",
+      "onHit": "1d6$modifier$ (1d8$modifier$)",
+      "range": "Melee"
+    },
+    {
+      "label": "Fire bolt",
+      "damageType": "Fire",
+      "onHit": "2d10",
+      "range": "120"
+    }
+  ],
+  "traits": [
+    {
+      "label": "Arcane Recovery",
+      "description": "You may recover spell slots with a combined level of half your wizard level (rounded up) excluding 6th level or higher slots",
+      "charges": 1,
+      "frequency": "Once per day, after a short rest"
+    },
+    {
+      "label": "Cantrips",
+      "description": "Firebolt, Create Bonfire, Mage Hand, Mold Earth"
+    },
+    {
+      "label": "1st Level Spells",
+      "description": "Absorb Elements, Ice Knife, Identify, Mage Armour",
+      "charges": 4
+    },
+    {
+      "label": "2nd Level Spells",
+      "description": "Flaming Sphere, Hold Person",
+      "charges": 3
+    },
+    {
+      "label": "3rd Level Spells",
+      "description": "Melf's Minute Meteors, Counterspell",
+      "charges": 3
+    },
+    {
+      "label": "4th Level Spells",
+      "description": "Ice Storm, Stone Shape",
+      "charges": 1
+    },
+    {
+      "label": "Evocation Savant"
+    },
+    {
+      "label": "Sculpt Spells"
+    },
+    {
+      "label": "Potent Cantrip",
+      "description": "When a creature saves against your cantrips, the creature takes half the cantrip's damage but no other effect"
+    },
+    {
+      "label": "Darkvision"
+    },
+    {
+      "label": "Dwarven Resilience",
+      "description": "Advantage on saves against poison and resistance to poison damage"
+    },
+    {
+      "label": "Dwarven Combat Training"
+    },
+    {
+      "label": "Stone Cunning",
+      "description": "History checks related to stonework add double proficiency"
+    },
+    {
+      "label": "Dwarven Toughness"
+    }
+  ],
+  "items": [
+    {
+      "label": "Quarterstaff",
+      "equipped": true
+    },
+    {
+      "label": "Arcane Focus"
+    },
+    {
+      "label": "Spellbook"
+    },
+    {
+      "label": "Scroll Case of Notes"
+    },
+    {
+      "label": "Winter Blanket"
+    },
+    {
+      "label": "Herbalism Kit"
+    },
+    {
+      "label": "Backpack"
+    },
+    {
+      "label": "Bedroll"
+    },
+    {
+      "label": "Mess Kit"
+    },
+    {
+      "label": "Tinderbox"
+    },
+    {
+      "label": "Waterskin"
+    },
+    {
+      "label": "50ft Rope"
+    },
+    {
+      "label": "Torches",
+      "quantity": 10
+    },
+    {
+      "label": "Days Rations",
+      "quantity": 10
+    }
+  ],
+  "proficiencies": [
+    "Common, Dwarvish",
+    "Daggers",
+    "Darts",
+    "Slings",
+    "Quarterstaffs",
+    "Light Crossbows",
+    "Herbalism Kit",
+    "Battleaxe",
+    "Handaxe",
+    "Light Hammer",
+    "Warhammer",
+    "Smith's Tools"
+  ],
+  "personality": "I connect everything that happens to me to a grand cosmic plan",
+  "ideals": "Solitude and comtemplation are paths toward mystical or magical power",
+  "bonds": "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me",
+  "flaws": "I'd risk too much to uncover a lost bit of knowledge",
+  "armorModifier": "Dexterity",
+  "baseArmor": 14
+}

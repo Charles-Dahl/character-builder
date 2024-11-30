@@ -55,12 +55,13 @@
 }
 
 .character-name {
-    background-image: url(/nameplate.png);
+    /* background-image: url(/nameplate.png); */
+    border: solid black 2px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 10rem;
-    aspect-ratio: 2;
+    width: 12rem;
+    aspect-ratio: 3;
     justify-content: center;
     font-size: large;
     font-weight: 600;
