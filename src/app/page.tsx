@@ -35,9 +35,9 @@ export default function Home() {
               <Items />
               <Proficiencies />
               <Personality />
-              <Ideals />
+              {/* <Ideals />
               <Bonds />
-              <Flaws />
+              <Flaws /> */}
             </Stack>
           </div>
         </div>

@@ -1,0 +1,194 @@
+{
+  "playerName": "Charles",
+  "characterName": "Emerryl",
+  "mainClass": "Warlock",
+  "subclass": "Archfey",
+  "background": "Noble",
+  "race": "Wood Elf",
+  "size": "Medium",
+  "movement": 35,
+  "hitDice": "d8",
+  "level": 4,
+  "proficiencyBonus": 2,
+  "abilityScores": {
+    "Strength": 8,
+    "Dexterity": 14,
+    "Constitution": 12,
+    "Intelligence": 14,
+    "Wisdom": 10,
+    "Charisma": 18
+  },
+  "saves": {
+    "Strength": false,
+    "Dexterity": false,
+    "Constitution": false,
+    "Intelligence": false,
+    "Wisdom": true,
+    "Charisma": true
+  },
+  "skills": {
+    "Strength": {
+      "Athletics": false
+    },
+    "Dexterity": {
+      "Acrobatics": false,
+      "Sleight of Hand": false,
+      "Stealth": true
+    },
+    "Constitution": {},
+    "Intelligence": {
+      "Arcana": false,
+      "History": true,
+      "Investigation": false,
+      "Nature": true,
+      "Religion": false
+    },
+    "Wisdom": {
+      "Animal Handling": true,
+      "Insight": true,
+      "Medicine": false,
+      "Perception": false,
+      "Survival": false
+    },
+    "Charisma": {
+      "Deception": true,
+      "Intimidation": false,
+      "Performance": true,
+      "Persuasion": true
+    }
+  },
+  "attacks": [
+    {
+      "label": "Sickle",
+      "damageType": "Slashing",
+      "modifier": "Strength",
+      "onHit": "1d4$modifier$",
+      "range": "Melee"
+    },
+    {
+      "label": "Dagger x2",
+      "damageType": "Piercing",
+      "modifier": "Dexterity",
+      "onHit": "1d4$modifier$",
+      "range": "Melee, Thrown (20/60)"
+    }
+  ],
+  "traits": [
+    {
+      "label": "Spellcasting",
+      "description": "Modifier: Charisma\nSpell Save DC: 14\nSpell Attack Bonus: 6",
+      "type": "Passive"
+    },
+    {
+      "label": "Armor of Shadows",
+      "description": "You can cast Mage Armor on yourself without expending a spell slot",
+      "type": "Action"
+    },
+    {
+      "label": "Pact of the Blade",
+      "description": "You may bond or summon a pact weapon. You may use Charisma modifier instead of Strength or Dex. You may cause the damage type to be Radiant, Psychic, or Necrotic instead",
+      "type": "Bonus Action"
+    },
+    {
+      "label": "Cantrips",
+      "description": "Mind Sliver\nBlade Ward\nFriends\nDruidcraft"
+    },
+    {
+      "label": "Mask of Many Faces",
+      "description": "You can cast Disguise Self without expending a spell slot",
+      "type": "Action"
+    },
+    {
+      "label": "Elven Lineage - Wood Elf",
+      "description": "You always have Longstrider prepared and can cast it without expending a spell slot",
+      "frequency": "Long Rest",
+      "charges": 1,
+      "type": "Action"
+    },
+    {
+      "label": "Actor",
+      "description": "While disguised, you have advantage on Deception and Performance checks to convince others you are that person. You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a spell DC Insight check to tell its fake",
+      "type": "Passive"
+    },
+    {
+      "label": "1st Level Spells",
+      "description": "Comprehend Languages\nFaerie Fire\nLongstrider\nSleep\nTasha's Hideous Laughter"
+    },
+    {
+      "label": "Magical Cunning",
+      "description": "You can perform an esoteric rite for 1 min to regain half your maximum spell slots, rounded up",
+      "charges": 1,
+      "frequency": "Long Rest",
+      "type": "Ritual"
+    },
+    {
+      "label": "Trance",
+      "description": "You can long rest in 4 hours by entering a trancelike meditation in which you retain conciousness. Magic can't put you to sleep.",
+      "type": "Passive"
+    },
+    {
+      "label": "Steps of the Fey",
+      "description": "You may cast Misty Step without expending a spell slot. When you cast it choose one:\nAfter teleporting, one creature you can see within 10ft gains 1d10 temporary hit points\nCreatures within 5ft of your previous space must succeed on a wisdom save or have disadvantage on attack rolls against creatures other than you until the start of your next turn",
+      "charges": 4,
+      "frequency": "Long Rest",
+      "type": "Bonus Action"
+    },
+    {
+      "label": "2nd Level Spells",
+      "description": "Calm Emotions\nCrown of Madness\nMirror Image\nMisty Step\nPhantasmal Force\nSuggestion",
+      "charges": 2,
+      "frequency": "Short Rest"
+    },
+    {
+      "label": "Darkvision",
+      "description": "You have Darkvision with a range of 60ft",
+      "type": "Passive"
+    },
+    {
+      "label": "Fey Ancestry",
+      "description": "You have Advantage on saving throws you make to avoid or end the charmed condition",
+      "type": "Passive"
+    }
+  ],
+  "items": [
+    {
+      "label": "Leather Armour",
+      "equipped": true
+    },
+    {
+      "label": "Arcane Focus"
+    },
+    {
+      "label": "Book (Occult Lore)"
+    },
+    {
+      "label": "2 Daggers"
+    },
+    {
+      "label": "Sickle"
+    },
+    {
+      "label": "Scholar's Pack"
+    },
+    {
+      "label": "Gaming Set (Dice)"
+    },
+    {
+      "label": "Fine Clothes"
+    },
+    {
+      "label": "Perfume"
+    }
+  ],
+  "proficiencies": [
+    "Simple Weapons",
+    "Light Armour",
+    "Gaming Set (Dice)"
+  ],
+  "personality": "Emerryl is a creature of contradictions: otherworldly and ethereal, yet chilling in manner and detached in empathy. Their allure is undeniable, yet unsettling, an embodiment of the fey's glamour and terror. Emerryl finds beauty in despair and intrigue in the suffering of others, viewing human emotions as curiosities to be prodded and observed. Though often cruel, they are driven by the whim of their patron and an almost scholarly desire to uncover the limits of mortal endurance and resolve.",
+  "ideals": "",
+  "bonds": "",
+  "flaws": "",
+  "armorModifier": "Dexterity",
+  "baseArmor": 11
+}

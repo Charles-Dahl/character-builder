@@ -13,7 +13,7 @@ const HitPoints = () => {
                 <Inline className={styles.label}>Hit Points</Inline>
                 <div className={styles.container}>
                     <Figure label="Current" />
-                    <Figure label="Max">58</Figure>
+                    <Figure label="Max">27</Figure>
                     <Figure label="Temp" />
                 </div>
             </Stack>
