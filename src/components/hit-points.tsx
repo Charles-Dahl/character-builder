@@ -6,14 +6,14 @@ import { Gap } from "@/utility/library/spacing"
 import Figure from "@/components/figure"
 
 const HitPoints = () => {
-    const { hitDice, level } = useCharacter()
+    const { hitDice, level, hitPoints } = useCharacter()
     return (
         <Stack gap={Gap.small}>
             <Stack>
                 <Inline className={styles.label}>Hit Points</Inline>
                 <div className={styles.container}>
                     <Figure label="Current" />
-                    <Figure label="Max">27</Figure>
+                    <Figure label="Max">{hitPoints}</Figure>
                     <Figure label="Temp" />
                 </div>
             </Stack>

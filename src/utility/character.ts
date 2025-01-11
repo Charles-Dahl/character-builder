@@ -6,7 +6,7 @@ import { Trait } from "@/utility/traits"
 import { Size } from "@/utility/size"
 import { Dice } from "@/utility/dice"
 import { Item } from "@/utility/items"
-export const character: Character = require('./emerryl.json')
+export const character: Character = require('./magnus.json')
 
 export interface Character {
   playerName: string,
@@ -18,6 +18,7 @@ export interface Character {
   size: Size,
   movement: number,
   hitDice: Dice,
+  hitPoints: number,
   level: number,
   proficiencyBonus: number,
   abilityScores: {

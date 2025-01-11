@@ -7,6 +7,7 @@
   "race": "Hill Dwarf",
   "size": "Medium",
   "hitDice": "d6",
+  "hitPoints": 66,
   "level": 7,
   "proficiencyBonus": 3,
   "abilityScores": {
@@ -73,61 +74,62 @@
   ],
   "traits": [
     {
+      "label": "Cantrips",
+      "description": "Firebolt\nCreate Bonfire\nMage Hand\nMold Earth"
+    },
+    {
+      "label": "1st Level Spells",
+      "description": "Absorb Elements\nIce Knife\nIdentify\nMage Armour",
+      "charges": 4
+    },
+    {
       "label": "Arcane Recovery",
       "description": "You may recover spell slots with a combined level of half your wizard level (rounded up) excluding 6th level or higher slots",
       "charges": 1,
       "frequency": "Once per day, after a short rest"
     },
     {
-      "label": "Cantrips",
-      "description": "Firebolt, Create Bonfire, Mage Hand, Mold Earth"
-    },
-    {
-      "label": "1st Level Spells",
-      "description": "Absorb Elements, Ice Knife, Identify, Mage Armour",
-      "charges": 4
-    },
-    {
       "label": "2nd Level Spells",
-      "description": "Flaming Sphere, Hold Person",
+      "description": "Flaming Sphere\nHold Person",
       "charges": 3
     },
     {
       "label": "3rd Level Spells",
-      "description": "Melf's Minute Meteors, Counterspell",
+      "description": "Melf's Minute Meteors\nCounterspell",
       "charges": 3
     },
     {
       "label": "4th Level Spells",
-      "description": "Ice Storm, Stone Shape",
+      "description": "Ice Storm\nStone Shape",
       "charges": 1
     },
     {
-      "label": "Evocation Savant"
+      "label": "Sculpt Spells",
+      "description": "When you cast an evocation spell that affects other creatures you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed their saving throw and take no damage"
     },
     {
-      "label": "Sculpt Spells"
+      "label": "Evocation Savant",
+      "description": "The gold and time you must spend to copy an evocation spell into your spellbook is halved"
     },
     {
       "label": "Potent Cantrip",
       "description": "When a creature saves against your cantrips, the creature takes half the cantrip's damage but no other effect"
     },
     {
-      "label": "Darkvision"
+      "label": "Darkvision",
+      "description": "You can see in dim light within 60ft of you as bright light, and in darkness as if it were dim light"
     },
     {
       "label": "Dwarven Resilience",
       "description": "Advantage on saves against poison and resistance to poison damage"
     },
     {
-      "label": "Dwarven Combat Training"
-    },
-    {
       "label": "Stone Cunning",
       "description": "History checks related to stonework add double proficiency"
     },
     {
-      "label": "Dwarven Toughness"
+      "label": "Dwarven Toughness",
+      "description": "You gain 1 maximum life per level"
     }
   ],
   "items": [
