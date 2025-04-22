@@ -6,15 +6,16 @@
   "background": "Hermit",
   "race": "Hill Dwarf",
   "size": "Medium",
+  "movement": 25,
   "hitDice": "d6",
   "hitPoints": 66,
-  "level": 7,
+  "level": 8,
   "proficiencyBonus": 3,
   "abilityScores": {
     "Strength": 12,
-    "Dexterity": 10,
+    "Dexterity": 11,
     "Constitution": 16,
-    "Intelligence": 17,
+    "Intelligence": 18,
     "Wisdom": 14,
     "Charisma": 8
   },
@@ -67,6 +68,7 @@
     },
     {
       "label": "Fire bolt",
+      "modifier": "Intelligence",
       "damageType": "Fire",
       "onHit": "2d10",
       "range": "120"
@@ -79,7 +81,7 @@
     },
     {
       "label": "1st Level Spells",
-      "description": "Absorb Elements\nIce Knife\nIdentify\nMage Armour",
+      "description": "Absorb Elements\nChromatic Orb\nIce Knife\nIdentify\nMage Armour",
       "charges": 4
     },
     {
@@ -90,7 +92,7 @@
     },
     {
       "label": "2nd Level Spells",
-      "description": "Flaming Sphere\nHold Person",
+      "description": "Flaming Sphere\nHold Person\nMirror Image",
       "charges": 3
     },
     {
@@ -101,7 +103,7 @@
     {
       "label": "4th Level Spells",
       "description": "Ice Storm\nStone Shape",
-      "charges": 1
+      "charges": 2
     },
     {
       "label": "Sculpt Spells",

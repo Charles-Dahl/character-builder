@@ -7,6 +7,7 @@ import Initiative from "@/components/initiative";
 import { Ability } from "@/utility/abilities";
 import styles from "./ability-block.module.css";
 import Attacks from "./attacks";
+import Movement from "./movement";
 
 const AbilityBlock = () => {
   return (
@@ -14,7 +15,11 @@ const AbilityBlock = () => {
       <Attacks />
       <AbilityExtended ability={Ability.constitution}><HitPoints /></AbilityExtended>
       <AbilityExtended ability={Ability.wisdom} />
-      <AbilityExtended ability={Ability.strength} />
+      <AbilityExtended ability={Ability.strength} >
+        <div className={styles["figure-group"]}>
+          <Movement />
+        </div>
+      </AbilityExtended>
       <AbilityExtended ability={Ability.dexterity}>
         <div className={styles["figure-group"]}>
           <ArmorClass />

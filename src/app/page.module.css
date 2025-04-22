@@ -7,7 +7,7 @@
   width: 297mm;
 
   padding: var(--medium);
-  padding-top: var(--small);
+  padding-top: var(--medium);
 }
 
 .layout {

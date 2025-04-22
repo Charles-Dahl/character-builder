@@ -1,0 +1,231 @@
+{
+    "playerName": "Charles",
+    "characterName": "Krom",
+    "mainClass": "Fighter",
+    "subclass": "",
+    "background": "Sailor",
+    "movement": 35,
+    "race": "Goliath",
+    "size": "Medium",
+    "hitDice": "d10",
+    "hitPoints": 11,
+    "level": 1,
+    "proficiencyBonus": 2,
+    "abilityScores": {
+        "Strength": 17,
+        "Dexterity": 14,
+        "Constitution": 12,
+        "Intelligence": 10,
+        "Wisdom": 14,
+        "Charisma": 8
+    },
+    "saves": {
+        "Strength": true,
+        "Dexterity": false,
+        "Constitution": true,
+        "Intelligence": false,
+        "Wisdom": false,
+        "Charisma": false
+    },
+    "skills": {
+        "Strength": {
+            "Athletics": true
+        },
+        "Dexterity": {
+            "Acrobatics": true,
+            "Sleight of Hand": false,
+            "Stealth": false
+        },
+        "Constitution": {},
+        "Intelligence": {
+            "Arcana": false,
+            "History": false,
+            "Investigation": false,
+            "Nature": false,
+            "Religion": false
+        },
+        "Wisdom": {
+            "Animal Handling": false,
+            "Insight": false,
+            "Medicine": false,
+            "Perception": true,
+            "Survival": true
+        },
+        "Charisma": {
+            "Deception": false,
+            "Intimidation": false,
+            "Performance": false,
+            "Persuasion": false
+        }
+    },
+    "attacks": [
+        {
+            "label": "Trident",
+            "damageType": "Piercing",
+            "modifier": "Strength",
+            "onHit": "1d8$modifier$ (1d10$modifier$)",
+            "range": "20/60"
+        },
+        {
+            "label": "Heavy Crossbow",
+            "damageType": "Piercing",
+            "modifier": "Strength",
+            "onHit": "1d10$modifier$",
+            "range": "100/400"
+        },
+        {
+            "label": "Dagger",
+            "damageType": "Piercing",
+            "modifier": "Strength",
+            "onHit": "1d4$modifier$",
+            "range": "Melee"
+        },
+        {
+            "label": "Enhanced Unarmed Strike",
+            "damageType": "Bludgeoning",
+            "modifier": "Strength",
+            "onHit": "1d4$modifier$",
+            "range": "Melee"
+        }
+    ],
+    "traits": [
+        {
+            "label": "Weapon Mastery",
+            "description": "Trident - Topple\nHeavy Crossbow - Push\nLongsword - Sap"
+        },
+        {
+            "label": "Topple",
+            "description": "If you hit a creature with this weapon, you can force the creature to make a DC 13 constitution saving throw. On a failed save, the creature has the Prone condition",
+            "type": "Passive",
+            "frequency": "On hit"
+        },
+        {
+            "label": "Push",
+            "description": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller",
+            "type": "Passive",
+            "frequency": "On hit"
+        },
+        {
+            "label": "Sap",
+            "description": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn",
+            "type": "Passive",
+            "frequency": "On hit"
+        },
+        {
+            "label": "Second Wind",
+            "description": "Regain hit points equal to 1d10 + Fighter Level, regain one use per short rest",
+            "charges": 2,
+            "type": "Bonus Action",
+            "frequency": "Long rest"
+        },
+        {
+            "label": "Damage Rerolls",
+            "description": "Whenever you roll a damage die for your unarmed strike, you can reroll the die if it rolls a 1, and you must use the new roll",
+            "type": "Passive"
+        },
+        {
+            "label": "Fighting Style - Protection",
+            "description": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target"
+        },
+        {
+            "label": "Unarmed Push",
+            "description": "When you hit a creature with an Unarmed Stike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you",
+            "type": "Passive",
+            "frequency": "Once per Turn"
+        },
+        {
+            "label": "Powerful Build",
+            "description": "You have advantage on any saving throw you make to end the grappled condition. You also count as one size larger when determining your carrying capacity",
+            "type": "Passive"
+        },
+        {
+            "label": "Storm's Thunder",
+            "description": "When you take damage from a creature within 60 feet of you, deal 1d8 Thunder damage to that creature",
+            "type": "Reaction",
+            "charges": 2,
+            "frequency": "Long rest"
+        }
+    ],
+    "items": [
+        {
+            "label": "Trident",
+            "equipped": true
+        },
+        {
+            "label": "Shield",
+            "equipped": true
+        },
+        {
+            "label": "Scale Mail",
+            "equipped": true
+        },
+        {
+            "label": "Heavy Crossbow"
+        },
+        {
+            "label": "Dagger"
+        },
+        {
+            "label": "Navigator's Tools"
+        },
+        {
+            "label": "Mirror"
+        },
+        {
+            "label": "Traveler's Clothes",
+            "equipped": true
+        },
+        {
+            "label": "Blanket"
+        },
+        {
+            "label": "Backpack"
+        },
+        {
+            "label": "Bedroll"
+        },
+        {
+            "label": "Mess Kit"
+        },
+        {
+            "label": "Tinderbox"
+        },
+        {
+            "label": "Waterskin"
+        },
+        {
+            "label": "50ft Rope"
+        },
+        {
+            "label": "Flask of Oil",
+            "quantity": 2
+        },
+        {
+            "label": "Torches",
+            "quantity": 10
+        },
+        {
+            "label": "Days Rations",
+            "quantity": 10
+        },
+        {
+            "label": "Case of bolts",
+            "quantity": 20
+        }
+    ],
+    "proficiencies": [
+        "Simple Weapons",
+        "Martial Weapons",
+        "Improvised Weapons",
+        "Light Armor",
+        "Medium Armor",
+        "Heavy Armor",
+        "Shields"
+    ],
+    "personality": "Krom will go to great lengths to shield those he cares about, whether they are his current companions or helpless strangers. Once Krom sets his mind to something, nothing short of a force of nature can stop him. Though his speech is blunt and direct, Krom's words often inspire others to press on in the face of adversity. While his demeanor is gruff, Krom's heart is kind, and he has a surprising soft spot for those in need.",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "armorModifier": "Dexterity",
+    "baseArmor": 14
+}
